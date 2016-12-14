@@ -15,12 +15,14 @@ h1 {
   font-family: "Dry Brush";
   text-transform: uppercase;
   color: #281D70;
-  line-height: 58px;
-  line-height: 3.625rem; }
+  line-height: 40px;
+  line-height: 2.5rem; }
   @media (min-width: 840px) {
     h1 {
       font-size: 45px;
-      font-size: 2.8125rem; } }
+      font-size: 2.8125rem;
+      line-height: 58px;
+      line-height: 3.625rem; } }
 
 h4 {
   font-family: 'DIN Pro';
@@ -97,8 +99,10 @@ p {
 
 .iPhone6 {
   width: 50%;
-  height: 100%;
-  margin-right: 10%; }
+  height: 100%; }
+  @media (min-width: 840px) {
+    .iPhone6 {
+      margin-right: 10%; } }
 
 .blue_brushs {
   width: 100%;
@@ -106,8 +110,6 @@ p {
   margin-bottom: -18.75rem; }
 
 .presentation__content {
-  position: relative;
-  top: 23%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,14 +126,16 @@ p {
   background-color: #281D70;
   padding-top: 50px;
   padding-top: 3.125rem;
-  padding-bottom: 80px;
-  padding-bottom: 5rem; }
+  padding-bottom: 40px;
+  padding-bottom: 2.5rem; }
   @media (min-width: 840px) {
     .presentation__content {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
-              flex-direction: row; } }
+              flex-direction: row;
+      padding-bottom: 80px;
+      padding-bottom: 5rem; } }
 
 .presentation__content--photo {
   background-image: url(/images/brushstroke2.png);
@@ -148,9 +152,11 @@ p {
 
 .monochrome_photo {
   width: 50%;
-  height: 100%;
-  margin-left: 30px;
-  margin-left: 1.875rem; }
+  height: 100%; }
+  @media (min-width: 840px) {
+    .monochrome_photo {
+      margin-left: 30px;
+      margin-left: 1.875rem; } }
 
 .presentation__content--explications {
   display: -webkit-box;
@@ -160,20 +166,28 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 50vw; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (min-width: 840px) {
+    .presentation__content--explications {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      width: 50vw; } }
 
 .presentation__content--explications h1, p {
   color: #FFFFFF;
-  text-align: left;
+  text-align: center;
   width: 70%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 0;
   letter-spacing: 2px;
   letter-spacing: 0.125rem; }
+  @media (min-width: 840px) {
+    .presentation__content--explications h1, p {
+      text-align: left; } }
 
 .presentation__content--explications p {
   line-height: 25px;
@@ -188,7 +202,9 @@ p {
           justify-content: center;
   background-color: #281D70;
   padding-bottom: 20px;
-  padding-bottom: 1.25rem; }
+  padding-bottom: 1.25rem;
+  margin-top: -5px;
+  margin-top: -0.3125rem; }
 
 .download_app img {
   width: 114px;

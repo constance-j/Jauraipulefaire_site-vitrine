@@ -18,10 +18,11 @@ h1 {
     font-family: "Dry Brush";
     text-transform: uppercase;
     color: #281D70;
-    line-height: 58px;
+    line-height: 40px;
 
     @media(min-width: 840px) {
         font-size: 45px;
+        line-height: 58px;
     }
 }
 
@@ -79,7 +80,10 @@ p {
 .iPhone6 {
   width: 50%;
   height: 100%;
-  margin-right: 10%;
+
+    @media(min-width: 840px) {
+        margin-right: 10%;
+    }
 }
 
 .blue_brushs {
@@ -88,18 +92,17 @@ p {
 }
 
 .presentation__content {
-    position: relative;
-    top: 23%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #281D70;
     padding-top: 50px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 
     @media(min-width: 840px) {
         flex-direction: row;
+        padding-bottom: 80px;
     }
 }
 
@@ -116,23 +119,35 @@ p {
 .monochrome_photo {
   width: 50%;
   height: 100%;
-  margin-left: 30px;
+
+    @media(min-width: 840px) {
+        margin-left: 30px;
+    }
 }
 
 .presentation__content--explications {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 50vw;
+    align-items: center;
+
+    @media(min-width: 840px) {
+        align-items: flex-start;
+        width: 50vw;
+    }
 }
 
 .presentation__content--explications h1, p {
     color: #FFFFFF;
-    text-align: left;
+    text-align: center;
     width: 70%;
     flex-wrap: wrap;
     margin-bottom: 0;
     letter-spacing: 2px;
+
+    @media(min-width: 840px) {
+        text-align: left;
+    }
+
 }
 
 .presentation__content--explications p {
@@ -144,6 +159,7 @@ p {
     justify-content: center;
     background-color: #281D70;
     padding-bottom: 20px;
+    margin-top: -5px;
 }
 
 .download_app img {
