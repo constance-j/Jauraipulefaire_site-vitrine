@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     background-color: #FAFAFA;
 }
 
@@ -6,25 +7,147 @@ img {
     width: 30%;
 }
 
+@font-face {
+font-family: 'DIN Pro';
+src: url('../fonts/DINPro-CondLight.otf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
 h1 {
     font-family: "Dry Brush";
-    font-size: 40px;
+    text-transform: uppercase;
+    color: #281D70;
+    line-height: 58px;
+
+    @media(min-width: 840px) {
+        font-size: 45px;
+    }
 }
 
 h4 {
-    font-family: "DIN Pro";
+    font-family: 'DIN Pro';
     font-size: 25px;
+}
+
+p {
+    font-family: 'DIN Pro';
+    font-size: 16px;
+    line-height: 30px;
 }
 
 .mockup {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media(min-width: 840px) {
+        flex-direction: row;
+    }
 }
 
 .mockup__presentation {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.presentation {
+.mockup__presentation--title {
+    width: 40%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.logo_pompidou {
+    width: 25%;
+}
+
+.mockup__iphone {
+    background-image: url(/images/brushstroke3.png);
+    width: 40vw;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.iPhone6 {
+  width: 50%;
+  height: 100%;
+  margin-right: 10%;
+}
+
+.blue_brushs {
+    width: 100%;
+    margin-bottom: -300px;
+}
+
+.presentation__content {
+    position: relative;
+    top: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #281D70;
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+    @media(min-width: 840px) {
+        flex-direction: row;
+    }
+}
+
+.presentation__content--photo {
+    background-image: url(/images/brushstroke2.png);
+    width: 60vw;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.monochrome_photo {
+  width: 50%;
+  height: 100%;
+  margin-left: 30px;
+}
+
+.presentation__content--explications {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50vw;
+}
+
+.presentation__content--explications h1, p {
     color: #FFFFFF;
+    text-align: left;
+    width: 70%;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+.presentation__content--explications p {
+    line-height: 25px;
+}
+
+.download_app {
+    display: flex;
+    justify-content: center;
+    background-color: #281D70;
+    padding-bottom: 20px;
+}
+
+.download_app img {
+    width: 114px;
+    height: 39px;
+    margin: 8px;
 }
