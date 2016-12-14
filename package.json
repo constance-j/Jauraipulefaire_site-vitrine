@@ -1,0 +1,29 @@
+{
+  "name": "jauraipulefaire_site-vitrine",
+  "version": "1.0.0",
+  "description": "website for a student project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/constance-j/Jauraipulefaire_site-vitrine.git"
+  },
+  "author": "Constance James",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/constance-j/Jauraipulefaire_site-vitrine/issues"
+  },
+  "homepage": "https://github.com/constance-j/Jauraipulefaire_site-vitrine#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.5.4",
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^3.0.0",
+    "postcss-pxtorem": "^3.3.1",
+    "run-sequence": "^1.2.2"
+  }
+}

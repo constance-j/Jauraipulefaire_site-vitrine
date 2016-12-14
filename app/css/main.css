@@ -1,0 +1,24 @@
+body {
+  background-color: #FAFAFA; }
+
+img {
+  width: 30%; }
+
+h1 {
+  font-family: "Dry Brush";
+  font-size: 40px;
+  font-size: 2.5rem; }
+
+h4 {
+  font-family: "DIN Pro";
+  font-size: 25px;
+  font-size: 1.5625rem; }
+
+.mockup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.presentation {
+  background-color: #281D70;
+  color: #FFFFFF; }
